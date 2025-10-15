@@ -1,0 +1,13 @@
+interface Instrument { void play(); }
+class Piano implements Instrument {
+    public void play(){ System.out.println("Piano plays"); }
+}
+class Guitar implements Instrument {
+    public void play(){ System.out.println("Guitar plays"); }
+}
+class Main {
+    public static void main(String[] a){
+        Instrument i1=new Piano(), i2=new Guitar();
+        i1.play(); i2.play();
+    }
+}
